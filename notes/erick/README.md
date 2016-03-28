@@ -1,4 +1,4 @@
 #Erick's Notes
 
-##Week One
+###Week One
  - [March, 28th] (week-one/3-28.md)
