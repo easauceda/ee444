@@ -1,0 +1,42 @@
+EE444 Notes: 3/28/2016
+ - Computer Organization v.s Computer Architecture
+ - Structure and functions 
+ - 4 basic functions of the system 
+ - structure of the system
+ 
+ Organization: actual physical componenets of the system (hardware details and how they interect with each other)
+	- Transparent to the programmer (implementation of hardware details are abstracted from the great all mighty computer programmers)
+		Ex. Controll signal?? (??? = will learn more about later) 
+			Memory System ??
+			
+ Architecture: attributes that are visible to the programmer and have  direct impact to the program.
+	
+	Ex. ISA -> Instruction SET Architecture???
+		The number or bits used to represent different data type
+		Addressing Mode techniques??? 
+		
+ A computer is a complex System
+	- Structure refers to the components and subcomponentes and how they interact with each other (top level view)
+	- Function refers to how each of the components operate
+	*What are the 4 basic functions of the system (see figure 1)
+		- Data Storage 
+			-Long term (disk)
+			-Short term (ram)
+		- Data Processing (applying operations to data)
+		- Data Transferring (or moving as she calls it...)
+			- if the device is connected to the system directly the process is called Input/Output (peripheral)
+			- if the device is remote over longer distance the process is refereed to as communication
+		- Control 
+Structure of the computer (see figure 2)
+	-cpu: central processing unit
+		-instruction set and execute
+		*Further broke down into components
+			1.) Cu: (controll unit) controll the operation of cpu and hence controls the system
+			2.) ALU: Arithmetic Logic unit. provide data processing functions 
+			3.) Registers: provides internal storage for cpu
+			4.) internal bus: allows the above components to communicate
+	-System Bus: makes it possible for cpu memory and I/O to comunicate and exchange information
+	-I/O: moves data into the system and out 
+	-Main memory: (Ram)
+		
+ 
