@@ -46,7 +46,7 @@
  4. Control
 
 
- - (Image to be placed here)
+ ![Top Level View](../images/top-level-view.png)
 
 
 ### Structure of the System
@@ -62,8 +62,15 @@
    - Provides storage for system
    - Also known as **RAM**
  - System Bus
-   - Communication between previous 3
+   - Comimages:
+	cpu-view.png
+	system-view.png
+	top-level-view.png
+munication between previous 3
    - Makes it possible for cpu, memory, and i/o to communicate and exchange information.
+   
+
+ ![Structure of Computer](../images/system-view.png)
  
 ###### Components of a CPU
  - Control Unit
@@ -76,6 +83,8 @@
  - Internal Bus
    - Similar to System Bus
 
+
+ ![Structure of CPU](../images/cpu-view.png)
 
 ### Topics for Next Class
  - Multicore processor.
