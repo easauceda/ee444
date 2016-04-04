@@ -31,12 +31,101 @@ Structure of the computer (see figure 2)
 	-cpu: central processing unit
 		-instruction set and execute
 		*Further broke down into components
-			1.) Cu: (controll unit) controll the operation of cpu and hence controls the system
+			1.) Cu: (controll unit) controll the operation of cpu and hence controls the system. fetch instructions, decode, and execution (instruction system)
 			2.) ALU: Arithmetic Logic unit. provide data processing functions 
 			3.) Registers: provides internal storage for cpu
 			4.) internal bus: allows the above components to communicate
 	-System Bus: makes it possible for cpu memory and I/O to comunicate and exchange information
 	-I/O: moves data into the system and out 
 	-Main memory: (Ram)
+	
+__________________________________________________________________________________________________________________________________________________________
+Notes: 3/30/2016
+-Multi Core System structure 
+-central processing unit (cpu)
+-Core (multi-processing)
+-Processor
+-PCB (printed circut board)
+-computer history
+
+	Single Processing Computer Cpu Componentes (review):
+		- ALU
+		- CU
+		- Registers
+	
+	MultiCore Computer: Contemporary computers have multiple processors that are refered to multicore computers
+	* these multi processors are placed on a single silicon chip
+	* each processing unit is consisting of (ALU, CU, Registers, Cache) -> names as Core
+	* Hence multiprocesser is same as multicore
+	
+	Multi level memeory (Cache; one of the most important reasons that computer are doing so well preformance wise  )
+	|
+	|-> cache is faster, smaller, and more exspensive per bit than main memory
+	Cache comes in three levels. Cache is placed between main memory and cpu.
+	Buffers the data (likely to be accessed in the near future) from main memory.
+	
+	PCB -> Printed circuiut Board
+	- flat rigid board that interconnect chips and electronic components
+	- the main PCB is referred to as System board or mother board (see figure 4)
+	- Memory holds both Data and instruction
+	- L1 cache is split into:
+		- L1 I cache
+		- L1 D cache
+		split to avoid structured hazard (possibly mutating data in parallel)
+	
+	-Processor: a physical piece of silicon consisting of one or more cores. The processor is the computer component that
+	fetches, interprets, executes instructions
+	
+	Computer history ZZZ.... :'( why!?!? why?!?!?! :/
+	5 Generations: (roughly) Each generation we will see changes in terms of the following:
+		- size
+		- cost
+		- power
+		-efficiency
+		-reliability
+	1.)Vaccume tubes (1940-1956)
+		- consumed alot of energy and generated lots of heat
+		- slow and expensive 
+		- large!! took up entire rooms
+		- Machine language was used or binary to program the computers
+		- As input, punch cards were used, and printed out as output
+		-ENIAC, Univac: Von New Monn??
+		
+	2.)Transistors!! :D (1956 -1964)
+		- computers became faster cheaper, smaller
+		- programming lanugage used was assembly and some higherlevel languages like fortran and colbolt 
+		- input -> punching cards
+		- output -> print out
+	3.)Integrated circuits!!(IC for short) :D (1964 -1971)
+		- miniaturized transitions from previous gen and put them on a chip and called them integrated circuits
+		- SSI-> small scale IC's
+		- MSI-> medium scale IC's
+		- LSI-> large scale IC's
+		- Keyboard and monitors
+		- Operating Systems
+		- IC's drastically increasing speed & performance
+	4.)MicroProcessors (1971- present)
+		- thousand of integrated cicuits are placed on a silicon chip 
+		- now, computers could fit in the palm of your hands.
+		- Intel 4004 ship - 1971:
+			- CPU, memory, I/O, components are placed on a single chip 
+		-1981, IBM intriduced the first home computer 
+		-1984, Apple introduced Mac
+		-Development of mouse, hand-held devices, GUI
+		
+	5.) Artificial intelligence (present- future)
+		- Less about hardware upgrade 
+		- Voice recognition 
+		- goal of this generation is to develop devices that respond to natural human language 
+		as input and are capable of learning & self organization
+		- nanotechnology 
+		- Improving performance & use of parallel processing
+		
+	next class:
+		- hypothetical machine 
+		- MBR, MAR, IR, PC
+
+
+
 		
  
