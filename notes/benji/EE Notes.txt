@@ -124,8 +124,188 @@ Notes: 3/30/2016
 	next class:
 		- hypothetical machine 
 		- MBR, MAR, IR, PC
-
-
-
+_______________________________________________________________________________________________________________________________________________
+Notes: 4/4/2016
+I Missed this class :'(
+_______________________________________________________________________________________________________________________________________________________
+Notes: 4/6/2016
+- Insruction Cycle
+- Hypothetical machine (AC, PC, IR)
+- Hypothetical Machine (AC, PC, IR, MAR, MBR)
+- Interrupts 
+	See figure 5
+	-Instruction Cycle
+		AC - Accumulator (register)
+		PC - program counter (holds address of instruction to fetch next)
+		IC - Instruction register (holds instruction after fetched from memeory)
 		
- 
+	System Bus 
+		-Data Bus (blue)
+		-Address Bus (yellow)
+		-Control Bus (red)
+	
+	Instruction Cycle (figure 6)
+		IF -> instruction fetch
+		IE -> instruction execution 
+		1.) Instruction fetch (IF)
+		2.) Instruction decoding (ID)
+		3.) Instruction execution (EXE)
+		4.) Memory (MEM)
+		5.) Write Back (WB)
+		
+		Steps??(chapter 3?)
+		- Address of the instruction is in PC
+		- Processor use that address to fetch the instruction and bring it into processor (IR)
+		- Processor always increments PC to point to the next instruction to be fetched
+		- (ID)Instruction includes information that indicates what operation has to be performed (decoding)
+		- Instruction is executed
+	
+	Hypothectical machine:
+	Instcrution is made of opcode and operand (16 bits)
+		- 4 bits to opcode  and 12bits to operand
+		
+		opcode:
+		0001 -> Read from memory into AC
+		0101 -> Add to AC from memory
+		0010 -> Store from AC into memory
+		
+		- 2^4 = 16, so only 16 possible operations can be defined... may be problematic 
+		
+	We could also include:
+		- MAR -> Memeory Address Register
+			- IO/AR (only stores addresses)
+		- MBR -> Memory Buffer Register
+			- IO/BR (stores instruction or data)
+			
+	Interrupts (can improve the cpu's efficiency????)
+		-Like control signals,that will suspend an operation and then resume at a later time
+		-*ISR - > interrupt service routine 
+______________________________________________________________________________________
+4/11/2016
+-Different types of Operations
+	- Data transfer 
+	- Arithmetic operations 
+	- Logical operations 
+	- transfer of control 
+	- Conversions
+	
+	Data transfer Operation
+		- Load -> instruction to transfers (data or instruction) from memory into CPU registers
+		ex. load data from 0XFE30 into Register 1
+		[ assembly format: lw $1 , 0XFE30($gp) ] ($1 => register 1, lw is load instruction, $gp global pointer)
+		- Store -> instruction to transfers data from CPU into memory
+		ex. store the content of register 3 into memory location 0XFE34
+		[ assembly format: sw $3, 0XFE34($gp)  ] ($3 => register 3, sw store instruction)
+	
+	Logical Operations & Arithmetic operation
+		- Shift instructions
+			sll shift left logical
+			srl shift right logical
+			sAr shift arithmetic logical (considers sign bit)
+			sAl shift arithmetic logical (considers sign bit)
+		- Rotate Right (don't need to know)
+		- Rotate Left  (don't need to know)
+		- And 
+		- OR
+		- Not (only takes on input) flips each bit
+		- XOR 
+		- NAND -> Not(AND)
+		- NOR -> Not(Or)
+		ex1. 
+			$1 0100111
+			$2 1101010
+			
+			AND operation for $1 and $2
+			AND     $3, $1, $2
+		  (opcode)  (operands)
+			
+			In this example registers $1 and $2 are AND'd (based on the optcode) and stored into register $3
+		
+		ex2. 
+			Not operation for register $1 and put the result into $3
+		
+		ex3. 
+			sll $3, $2, 2
+			
+			shift what's in register 2 to the left twice and write results to register 3
+			(add two 0's on the right)
+		
+		ex4.
+			srl $3, $2, 2
+			
+			shift what's in register 2 to the right twice and write results to register 3
+			(add two 0's on the left)
+		ex5.
+			SAr $3, $2, 2
+			airthmetic shift what's in register 2 to the right twice and write results to register 3
+		   (add two of the sign bits on the left)
+	
+	- Transfer of control (branch jump)	
+	
+	- Booth's Algorithm (used for multiplying two signed binary numbers)
+__________________________________________________________________________________________________________________
+4/13/2016
+- Combinational circuits 
+- Digital Circuits
+- Logic Gates
+- Binary Logic 
+- Boolean Algebra 
+- Boolean Function 
+- Basic identities of Boolean Algebra 
+
+	- Sequential circuit use memory?
+	- Combinational circuits don't use memory 
+	
+	Digital CKT:
+		- hardware components that could manipulate with binary Data
+		Logic gate: Basic form of digital CKT performs specific logic operations
+		*universal gates: AND, OR, NOT, NAND, NOR
+		
+	Binary Logic:
+		-Involves Binary variables and logic operations
+		Binary variable: variable that could have only two discrete values, 1 or 0 
+		
+	*Binary logic is similar to binary arithmatic but ARE NOT the same. DON'T CONFUSE THEM!!! >:(
+	
+	Boolean Algebra: it is an algebra that deals with binary variables and logic operations (AND, OR, NOT)
+	
+	Boolean Expression:
+		It isan algebraiac expression fonsisting of :
+			- binary vairables 
+			- logical operations
+			- constant  1, 0
+			-
+	
+	Boolean Function:
+		Can be described with:
+			- using truth table
+			- Logical CKT diagram
+			- boolean expresion
+			         _     _
+		F(X, Y, Z) = XYZ + ZX
+			      
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		   
