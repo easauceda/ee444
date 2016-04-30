@@ -283,13 +283,27 @@ ________________________________________________________________________________
 			- boolean expresion
 			         _     _
 		F(X, Y, Z) = XYZ + ZX
-			      
+________________________________________________________________________________________________________________________________
+4/25/2016
+	Half Adder 
+	Full Adder 
+	multiplexer - > mux (data selector)
 		
-		
-		
-		
-	
-	
+____________________________________________
+4/27/2016
+	Midterm topics:	
+		- K maps (4 variables)
+		- SOP, POS (sum of products, products of sums)
+		- Implicant's, PI's, EPI
+		- Hypothetical Machine 
+		- Multiple Interrupts
+		- State Diagram 
+			- instruction Cycle
+		- Booth Algorithm
+		- Circuit Diagrams (be able to draw circuits)
+		- Full Adder 
+		- Hex addition/Subtraction 
+		- 2's complement :D
 	
 	
 	
