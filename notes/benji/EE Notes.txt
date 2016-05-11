@@ -305,9 +305,77 @@ ____________________________________________
 		- Hex addition/Subtraction 
 		- 2's complement :D
 	
+________________________________________________________
+5/4/2016
+	topics:
+		- Memory Heiarchy
+		- Cache
+		- Direct mapped Cache
+		
+		
+	Memory Heirachy
+		- Byte Addressable -> pc+4 (See fig. 7 )
+		- Word Addressable -> pc+1 (See fig. 7 )
+		- Many techniques to increase cpu performance 
+			1. Pipe lining 
+			2. Branch prediction
+			
+		- L1 Cache level 1 cache is split into instruction cache and data cache 
+		Cache:
+			- Buffers the most recent accessed data closer to the CPU
+		- L1 and L2 cache are inside the CPU
+		- L3 is outside the cpu but closer to the CPU than main memory 
+		
+		- Block of Information: The main memory unit of data passed between different level.
+____________________________________________________________________________________________________
+5/9/2016
+- More on cache
+- RISC Architecture 
+	- Instruction Format (MIPS)
+		- R-type (register type instructions)
+		- I-type (Immediate type instructions)
+		- J-type (Jump Instructions)
+		
+		
+		
+		
+	RISC (reduced instruction set computers)
+		-MIPS -> Microprocessor without Interlocked pipeline stages
+		- All the instructions have fixed length 
+	- ex. MIPS (32 buts): instruction length = 32 bits
+	- Using more Arichetectual Registers 
+	- Addressing Mode techinques more simple (less)
+	*-Addressing Techniques
+		- Immediate addressing mode 
+		- Register addressing mode 
+		- Base offset Addressing mode
+		- pc-relative addressing mode
+		- pseudo direct addressing mode
+	*- addressing mode defines : where and how to find the operand 
+	Instructions 
+		- made of opcode and operands
+		- opcode tells you what operation to preform and what addressing mode
+		1.) R-type
+			- opcode: 6 bits
+			- rs : 5 bits; 1st Source register
+			- rt : 5 bits; 2dn Source register
+			- rd : 5 bits; destination register
+			- shift amount: 5 bits
+			- function: 6bits
+		- Why 5 bits for rs,rt,rd??
+			- MIPS has 32 general purpose registers(GPRs)
+			- Each Register is 32bits
+			- 2^5 = 32 which is enough to uniquely identify the registers
+			
+		ex. Add $1, $2, $3 // $1 = rd, $2= rs, $3= rt, ADD => R-type
+			- converting into machine code we get the following:
+			000000 00010 00011 00001 00000 100000
 	
-	
-	
+	CISC (complex instruction set computers)
+	- Instruction length varies 
+	- less no. of registers special purpose registers (accumulator)
+		- ex. Motorola 
+	- more addressing Mode techiniques complex indirect addressing mode
 	
 	
 
